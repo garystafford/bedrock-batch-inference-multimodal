@@ -37,6 +37,8 @@ See the AWS [documentation](https://docs.aws.amazon.com/bedrock/latest/userguide
 
 ### IAM Role Trusted Entities
 
+See the AWS [documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-eventbridge-create-rule-ex.html) for more details.
+
 ```json
 {
   "Version": "2012-10-17",
@@ -60,3 +62,19 @@ See the AWS [documentation](https://docs.aws.amazon.com/bedrock/latest/userguide
   ]
 }
 ```
+
+## EventBridge Rule Event Pattern
+
+```json
+{
+  "source": ["aws.bedrock"],
+  "detail-type": ["Batch Inference Job State Change"],
+  "detail": {
+    "status": ["Submitted", "Scheduled", "Stopped", "Completed", "Failed"]
+  }
+}
+```
+
+---
+
+The contents of this repository represent my viewpoints and not of my past or current employers, including Amazon Web Services (AWS). All third-party libraries, modules, plugins, and SDKs are the property of their respective owners.
