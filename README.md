@@ -1,6 +1,8 @@
-# Multimodal Batch Inference on Amazon Bedrock with Anthropic Claude 3.5
+# Multimodal Batch Inference on Amazon Bedrock with Anthropic Claude 3.5 Sonnet
 
-Explore the use of Amazon Bedrock's batch inference capabilities with multimodal models like Anthropic Claude 3.5 Sonnet to generate cost-effective bulk image descriptions.
+Explore Amazon Bedrock’s batch inference capabilities with multimodal models like Anthropic Claude 3.5 Sonnet to generate cost-effective bulk image titles, descriptions, and keywords.
+
+![Architecture](batch_inference.png)
 
 ## Bedrock Batch Inference IAM Permissions
 
